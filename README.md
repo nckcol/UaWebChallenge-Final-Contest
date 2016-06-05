@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UaWebChallenge Final Contest
 Junior Front-end (HTML+CSS) Developer nomination. 
 Details about competition http://uawebchallenge.com/web
@@ -9,3 +10,7 @@ Also you can find tasks [here](https://drive.google.com/folderview?id=0B_wfVjJtl
 ## How to install
 
 `soon`
+=======
+# UaWebChallenge-Final-Contest
+Junior Front-end (HTML+CSS) Developer nomination. Details about competition http://uawebchallenge.com/web
+>>>>>>> 55a6056d553c03609684e09706f4d57b042c53e6
