@@ -1,0 +1,25 @@
+@mixin u-link {
+  color: $color-steel-blue;
+  text-decoration: none;
+  transition: color .1s ease-out;
+
+  &:hover {
+    color: darken($color-steel-blue, 20%);
+  }
+
+  &:active {
+    color: $color-flamingo;
+  }
+}
+
+@mixin u-link__text {
+  border-bottom: 1px solid currentColor;
+}
+
+@mixin u-link__text_dotted {
+  border-bottom-style: dotted;
+}
+
+@mixin u-link__text_dashed {
+  border-bottom-style: dashed;
+}

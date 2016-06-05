@@ -1,0 +1,55 @@
+// SETTINGS: Global variables, config switches, brand colours, etc. \\
+
+@import ../../settings/colors
+@import ../../settings/vars
+
+
+// TOOLS: Default mixins and functions. \\
+
+@import ../../utilities/em/index
+@import ../../utilities/rem/index
+@import ../../utilities/grid/index
+@import ../../utilities/btn/index
+//noinspection CssUnknownTarget
+@import ./node_modules/include-media/dist/include-media
+
+$tiny: rem(320px, 16px)
+$small: rem(780px, 16px)
+$medium: rem(1366px, 16px)
+$large: rem(1584px, 16px)
+
+$tiny: 320px
+$small: 780px
+$medium: 1366px
+$large: 1584px
+
+$breakpoints: (tiny: $tiny, small: $small, medium: $medium, large: $large)
+
+// GENERIC: Ground-zero styles (Normalize.css, resets, box-sizing). \\
+
+//noinspection CssUnknownTarget
+@import ./node_modules/normalize-scss/sass/normalize
++normalize()
+
+
+// BASE: Unclassed HTML elements (type selectors). \\
+
+@import fonts
+@import root
+@import typography
+
+// OBJECTS: Cosmetic-free design patterns. \\
+
+@import layout
+@import ../../objects/nav/index
+@import ../../objects/slider/index
+
+
+// COMPONENTS: Designed components, chunks of UI. \\
+
+@import ../../components/icon/index
+@import ../../components/button/index
+@import ../../components/slide/index
+
+
+// TRUMPS: Helpers and overrides. \\

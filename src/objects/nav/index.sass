@@ -1,0 +1,78 @@
+.o-nav
+  +u-grid()
+  justify-content: space-between
+  height: inherit
+
+  &__col
+    +u-grid__col($align-self: center)
+    height: inherit
+
+    &_menu
+      +u-grid__col(100px)
+      width: 100px
+
+      +media("<1024px")
+        +u-grid__col(40px)
+        width: 40px
+
+    &_social
+      height: auto
+      text-align: right
+      padding: 0 100px
+
+      +media("<1024px")
+        padding: 0 40px
+
+  &__menu-btn
+    display: inline-block
+    background-color: $color-blue
+    width: inherit
+    height: inherit
+    color: #fff
+    padding: 1.7rem
+    box-sizing: border-box
+    transition: all .2s ease-out
+
+    +media("<1024px")
+      padding: 0.6rem
+
+    &:hover
+      background-color: darken($color-blue, 10%)
+
+    &:active
+      background-color: darken($color-blue, 20%)
+      transition: all .1s ease-out
+
+  &__social-btn
+    width: 1.3rem
+    height: 1.3rem
+    display: inline-block
+    color: $color-grey
+    margin-right: 2rem
+    transition: all .2s ease-out
+    vertical-align: middle
+
+    +media("<1024px")
+      width: 0.9rem
+      height: 0.9rem
+
+    &:last-child
+      margin-right: 0
+
+    &:hover
+      color: $color-blue
+
+    &:active
+      color: darken($color-blue, 10%)
+      transition: all .1s ease-out
+
+  &__icon
+    color: inherit
+    display: inline-block
+    width: 100%
+    height: 100%
+
+
+
+
+

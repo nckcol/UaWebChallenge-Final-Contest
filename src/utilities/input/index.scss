@@ -1,0 +1,31 @@
+@mixin u-input {
+  appearance: none;
+  border: 1px solid #cccccc;
+  height: 2em;
+  border-radius: 1em;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0 1em;
+  transition: border-color 0.2s ease-out;
+
+  &:focus {
+    border-color: $color-steel-blue;
+  }
+}
+
+@mixin u-input__btn() {
+  -webkit-appearance: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+  height: 2em;
+  width: 2em;
+  border-radius:1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}

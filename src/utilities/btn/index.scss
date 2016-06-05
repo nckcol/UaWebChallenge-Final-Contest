@@ -1,0 +1,20 @@
+@mixin u-btn() {
+  -webkit-appearance: none;
+  background: none;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: inherit;
+  border: 2px solid currentColor;
+  padding: 1em 4em;
+  letter-spacing: 0.2em;
+  outline: none;
+
+  @include media("<small") {
+    padding: 1em 2em;
+    max-width: 100%;
+    text-align: center;
+  }
+}

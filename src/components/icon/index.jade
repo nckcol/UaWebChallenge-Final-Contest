@@ -1,0 +1,3 @@
+mixin icon(id)
+    svg(class="icon icon_#{id}" role="presentation")&attributes(attributes)
+        use(xlink:href="assets/svg/icons-sprite.svg#icon-#{id}")

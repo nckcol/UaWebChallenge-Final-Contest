@@ -1,0 +1,39 @@
+include ../../../node_modules/bemto.jade/bemto
+
+// OBJECTS \\
+include ../../objects/nav/index
+include ../../objects/slider/index
+
+// COMPONENTS \\
+include ../../components/slide/index
+include ../../components/icon/index
+include ../../components/google-analytics/index
+
+include ../../components/button/index
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible", content="ie=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        link(rel="apple-touch-icon", href="apple-touch-icon.png")
+        block title
+            title Final
+
+        meta(name="description", content="")
+
+        block styles
+    body
+
+        +b.o-layout
+            +e.box
+                +e.content
+                    +e.row_nav
+                        +nav()
+                    +e.row_main
+                        block content
+
+
+        block scripts

@@ -1,0 +1,43 @@
+.o-layout
+  +u-grid()
+  justify-content: center
+  min-height: 100%
+
+  &__box
+    +u-grid__col(1584px, $align-self: center)
+    min-width: 1584px
+    width: 1584px
+
+    +media("<large")
+      +u-grid__col(100%, $align-self: center)
+      min-width: 100%
+      width: auto
+
+  &__content
+    +u-grid($flex-direction: column)
+    margin: 1rem 2*$spacing
+    box-shadow: 0 4px 68px rgba(#000, 0.1)
+
+    +media("<1024px")
+      margin: 1rem
+
+  &__row
+    +u-grid__col()
+
+    &_nav
+      +u-grid__col(100px)
+      min-height: 100px
+      height: 100px
+
+      +media("<1024px")
+        +u-grid__col(40px)
+        min-height: 40px
+        height: 40px
+
+    &_main
+      padding: 0 100px 100px 100px
+
+      +media("<1024px")
+        padding: 0 40px 40px 40px
+
+

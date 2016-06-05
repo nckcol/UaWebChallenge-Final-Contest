@@ -1,0 +1,24 @@
+mixin slider()
+    +b.o-slider
+        +e.UL.dots
+            +e.LI.dot-item
+                +e.A(href="javascript:void(null);", title="First Slide", data-index=1).dot_current.js-slider-dot
+            +e.LI.dot-item
+                +e.A(href="javascript:void(null);", title="Second Slide", data-index=2).dot.js-slider-dot
+            +e.LI.dot-item
+                +e.A(href="javascript:void(null);", title="Third Slide", data-index=3).dot.js-slider-dot
+        +e.UL.captions
+            +e.LI.caption-item_current.js-slider-caption(data-index=1)
+                +e.caption About
+            +e.LI.caption-item.js-slider-caption(data-index=2)
+                +e.caption No way
+            +e.LI.caption-item.js-slider-caption(data-index=3)
+                +e.caption Always
+
+        +e.UL.list
+            +e.LI.item
+                +slide()._current.js-slider-slide(data-index=1)
+            +e.LI.item
+                +slide().js-slider-slide(data-index=2)
+            +e.LI.item
+                +slide().js-slider-slide(data-index=3)

@@ -1,0 +1,19 @@
+mixin slide()
+    +b.SECTION.c-slide&attributes(attributes)
+        +e.col_image
+            +e.image
+                +e.main-photo
+                    +e.IMG(src="assets/images/slide-1.main.png", alt="Main Image").photo_main.__roll-in_left._100
+                +e.secondary-photo
+                    +e.IMG(src="assets/images/slide-1.sec.png", alt="Whatever").photo_secondary.__roll-in_left._300
+        +e.col_text
+            +e.text
+                +e.H2.roll-in_up._100 Willow Crest
+                +e.P.roll-in_200.in-letter.
+                    The travellers gazed on this curious spectacle from the platforms; but Phileas Fogg, who had the most reason of all to be in a hurry,
+                    remained in his seat,  and waited philosophically until it should please the buffaloes to get out of the way.
+                    Passepartout was furious at the delay they occasioned, and longed to discharge his arsenal of revolvers upon them.
+                +e.P.roll-in_300.
+                    "What a country!" cried he. "Mere cattle stop the trains, and go by in a procession, just as if they were not impeding travel! Parbleu! I should like to know if Mr. Fogg foresaw this mishap in his programme! And here's an engineer who doesn't dare to run the locomotive into this herd of beasts!"
+                +e.P.roll-in_400
+                    +button Discover
